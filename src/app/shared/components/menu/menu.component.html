@@ -15,7 +15,7 @@
       <li *ngFor="let menuItem of menuItems" [class.mega-menu]="menuItem.megaMenu">
         <!-- Sub -->
         <a href="javascript:void(0)" class="nav-link" *ngIf="menuItem.type === 'sub'" 
-            (click)="toggletNavActive(menuItem)">
+            (click)="toggletNavActive(menuItem)" style="max-width: 135px;">
           {{ menuItem.title | translate }}
           <div class="lable-nav" *ngIf="menuItem.badge">{{ menuItem.badgeText | translate }}</div>
           <span class="sub-arrow" *ngIf="menuItem.children"></span>
