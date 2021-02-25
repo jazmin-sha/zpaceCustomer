@@ -33,27 +33,86 @@ export class NavService {
 	}
 
 	MENUITEMS: Menu[] = [
+		// {
+		// 	title: 'Purchase & Delivery', type: 'sub', active: false, children: [
+		// 		{
+		// 			title: 'clothing', type: 'sub', active: false, children: [
+		// 				{ path: '/home/fashion', title: 'fashion-01', type: 'link' },
+		// 				{ path: '/home/fashion-2', title: 'fashion-02', type: 'link' },
+		// 				{ path: '/home/fashion-3', title: 'fashion-03', type: 'link' }
+		// 			]
+		// 		},
+		// 		{ path: '/home/vegetable', title: 'vegetable', type: 'link' },
+		// 		{ path: '/home/watch', title: 'watch', type: 'link' },
+		// 		{ path: '/home/furniture', title: 'furniture', type: 'link' },
+		// 		{ path: '/home/flower', title: 'flower', type: 'link' },
+		// 		{ path: '/home/beauty', title: 'beauty', type: 'link' },
+		// 		{ path: '/home/electronics', title: 'electronics', type: 'link' },
+		// 		{ path: '/home/pets', title: 'pets', type: 'link' },
+		// 		{ path: '/home/gym', title: 'gym', type: 'link' },
+		// 		{ path: '/home/tools', title: 'tools', type: 'link' },
+		// 		{ path: '/home/shoes', title: 'shoes', type: 'link' },
+		// 		{ path: '/home/bags', title: 'bags', type: 'link' },
+		// 		{ path: '/home/marijuana', title: 'marijuana', type: 'link' }
+		// 	]
+		// },
 		{
 			title: 'Purchase & Delivery', type: 'sub', active: false, children: [
 				{
-					title: 'clothing', type: 'sub', active: false, children: [
-						{ path: '/home/fashion', title: 'fashion-01', type: 'link' },
-						{ path: '/home/fashion-2', title: 'fashion-02', type: 'link' },
-						{ path: '/home/fashion-3', title: 'fashion-03', type: 'link' }
+					title: 'Meat', type: 'sub', active: false, children: [
+						{ path: '/home/fashion', title: 'Chicken', type: 'link' },
+						{ path: '/home/fashion-2', title: 'Beaf', type: 'link' },
 					]
 				},
-				{ path: '/home/vegetable', title: 'vegetable', type: 'link' },
-				{ path: '/home/watch', title: 'watch', type: 'link' },
-				{ path: '/home/furniture', title: 'furniture', type: 'link' },
-				{ path: '/home/flower', title: 'flower', type: 'link' },
-				{ path: '/home/beauty', title: 'beauty', type: 'link' },
-				{ path: '/home/electronics', title: 'electronics', type: 'link' },
-				{ path: '/home/pets', title: 'pets', type: 'link' },
-				{ path: '/home/gym', title: 'gym', type: 'link' },
-				{ path: '/home/tools', title: 'tools', type: 'link' },
-				{ path: '/home/shoes', title: 'shoes', type: 'link' },
-				{ path: '/home/bags', title: 'bags', type: 'link' },
-				{ path: '/home/marijuana', title: 'marijuana', type: 'link' }
+				{
+					title: 'Bakers', type: 'sub', active: false, children: [
+						{ path: '/home/fashion', title: 'Cake', type: 'link' },
+						{ path: '/home/fashion-2', title: 'Sweets', type: 'link' },
+						{ path: '/home/fashion-3', title: 'Ice Cream', type: 'link' }
+					]
+				},
+				{
+					title: 'Pots', type: 'sub', active: false, children: [
+						{ path: '/home/fashion', title: 'Plant Pots', type: 'link' },
+					]
+				},
+				{
+					title: 'Cool Drinks', type: 'sub', active: false, children: [
+						{ path: '/home/fashion', title: 'Cola', type: 'link' },
+						{ path: '/home/fashion-2', title: 'Drink', type: 'link' },
+					]
+				},
+				{
+					title: 'Vegetables', type: 'sub', active: false, children: [
+						{ path:'/home/vegetable', title: 'Veg1', type: 'link' },
+						{ path:'/home/vegetable', title: 'Veg2', type: 'link' },
+					]
+				},
+				{
+					title: 'Fruits', type: 'sub', active: false, children: [
+						{ path: '/home/fashion', title: 'Fruits1', type: 'link' },
+						{ path: '/home/fashion-2', title: 'Fruits2', type: 'link' },
+					]
+				},
+				{
+					title: 'Stationary', type: 'sub', active: false, children: [
+						{ path: '/home/bags', title: 'Office School', type: 'link' },
+						{ path: '/home/tools', title: 'tools', type: 'link' },
+					]
+				},
+				// { path: '/home/vegetable', title: 'vegetable', type: 'link' },
+				// { path: '/home/watch', title: 'watch', type: 'link' },
+				// { path: '/home/furniture', title: 'furniture', type: 'link' },
+				// { path: '/home/flower', title: 'flower', type: 'link' },
+				// { path: '/home/beauty', title: 'beauty', type: 'link' },
+				// { path: '/home/electronics', title: 'electronics', type: 'link' },
+				// { path: '/home/pets', title: 'pets', type: 'link' },
+				// { path: '/home/gym', title: 'gym', type: 'link' },
+				// { path: '/home/tools', title: 'tools', type: 'link' },
+				// { path: '/home/shoes', title: 'shoes', type: 'link' },
+				// { path: '/home/bags', title: 'bags', type: 'link' },
+				// { path: '/home/marijuana', title: 'marijuana', type: 'link' }
+
 			]
 		},
 		{
@@ -173,33 +232,57 @@ export class NavService {
 
 	LEFTMENUITEMS: Menu[] = [
 		{
-			title: 'clothing', type: 'sub', megaMenu: true, active: false, children: [
+			title: 'Purchase & Delivery', type: 'sub', megaMenu: true, active: false, children: [
 			  {
-				  title: 'mens fashion',  type: 'link', active: false, children: [
-					  { path: '/home/fashion', title: 'sports wear',  type: 'link' },
-					  { path: '/home/fashion', title: 'top',  type: 'link' },
-					  { path: '/home/fashion', title: 'bottom',  type: 'link' },
-					  { path: '/home/fashion', title: 'ethic wear',  type: 'link' },
-					  { path: '/home/fashion', title: 'sports wear',  type: 'link' },
-					  { path: '/home/fashion', title: 'shirts',  type: 'link' },
-					  { path: '/home/fashion', title: 'bottom',  type: 'link' },
-					  { path: '/home/fashion', title: 'ethic wear',  type: 'link' },
-					  { path: '/home/fashion', title: 'sports wear',  type: 'link' }
+				  title: 'Meat',  type: 'link', active: false, children: [
+					  { path: '/home/fashion', title: 'Chicken',  type: 'link' },
+					  { path: '/home/fashion', title: 'Beaf',  type: 'link' },
+					  { path: '/home/fashion', title: 'Mutton',  type: 'link' },
+					  { path: '/home/fashion', title: 'Pork',  type: 'link' },
 				  ]
 			  },
 			  {
-				  title: 'women fashion',  type: 'link', active: false, children: [
-					  { path: '/home/fashion', title: 'dresses',  type: 'link' },
-					  { path: '/home/fashion', title: 'skirts',  type: 'link' },
-					  { path: '/home/fashion', title: 'westarn wear',  type: 'link' },
-					  { path: '/home/fashion', title: 'ethic wear',  type: 'link' },
-					  { path: '/home/fashion', title: 'bottom',  type: 'link' },
-					  { path: '/home/fashion', title: 'ethic wear',  type: 'link' },
-					  { path: '/home/fashion', title: 'sports wear',  type: 'link' },
-					  { path: '/home/fashion', title: 'sports wear',  type: 'link' },
-					  { path: '/home/fashion', title: 'bottom wear',  type: 'link' }
+				  title: 'Bakers',  type: 'link', active: false, children: [
+					  { path: '/home/fashion', title: 'Bakers',  type: 'link' },
+					  { path: '/home/fashion', title: 'Sweets',  type: 'link' },
+					  { path: '/home/fashion', title: 'Ice Cream',  type: 'link' },
+					  { path: '/home/fashion', title: 'Breads',  type: 'link' },
 				  ]
 			  },
+			  {
+				title: 'Pots',  type: 'link', active: false, children: [
+					{ path: '/home/fashion', title: 'Plamt Pots1',  type: 'link' },
+					{ path: '/home/fashion', title: 'Pots 2',  type: 'link' },
+				]
+			},
+			{
+				title: 'Cool Drinks',  type: 'link', active: false, children: [
+					{ path: '/home/fashion', title: 'Cola',  type: 'link' },
+					{ path: '/home/fashion', title: 'Juice',  type: 'link' },
+					{ path: '/home/fashion', title: 'Drink',  type: 'link' },
+				]
+			},
+			{
+				title: 'Vegetables',  type: 'link', active: false, children: [
+					{ path: '/home/fashion', title: 'Veg1',  type: 'link' },
+					{ path: '/home/fashion', title: 'Veg2',  type: 'link' },
+					{ path: '/home/fashion', title: 'Veg3',  type: 'link' },
+				]
+			},
+			{
+				title: 'Fruits',  type: 'link', active: false, children: [
+					{ path: '/home/fashion', title: 'Fruits1',  type: 'link' },
+					{ path: '/home/fashion', title: 'Fruits2',  type: 'link' },
+					{ path: '/home/fashion', title: 'Fruits3',  type: 'link' },
+				]
+			},
+			{
+				title: 'Stationary',  type: 'link', active: false, children: [
+					{ path: '/home/fashion', title: 'Schools/office',  type: 'link' },
+					{ path: '/home/fashion', title: 'Tools',  type: 'link' },
+				]
+			},
+			  
 			]
 		},
 		{

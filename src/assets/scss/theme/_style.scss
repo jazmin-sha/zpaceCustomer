@@ -432,7 +432,7 @@ del {
                 }
                 .menu-left {
                     .navbar {
-                        padding: 28px 45px 28px 0;
+                        padding: 37px 4px 40px 0;
                     }
                 }
                 .menu-right {
@@ -1219,6 +1219,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 9;
+    height: 90px;
     &.product-full-page {
         z-index: 9999;
     }
@@ -1232,7 +1233,7 @@ header {
         align-items: center;
         .navbar {
             display: inline-block;
-            padding: 40px 45px 40px 0;
+            padding: 40px 10px 40px 0;
             i {
                 font-size: 24px;
                 color: $dark-font;
