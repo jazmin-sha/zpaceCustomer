@@ -47,22 +47,29 @@
             <app-left-menu></app-left-menu>
             <div class="brand-logo">
               <a routerLink="/home/fashion" id="headerlogo">
-                <img [src]="themeLogo" class="img-fluid" alt="logo" width="220" height="400">
+                <img [src]="themeLogo" class="img-fluid" alt="logo" width="240" height="600">
               </a>
             </div>
           </div>
           <div class="menu-right pull-right">
-            <div>
-              <app-menu></app-menu>
+            <div class="divsetting">
+              <app-settings></app-settings>
             </div>
-
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div>
-        <app-settings></app-settings>
+      <div class="col-sm-12">
+        <div class="main-menu">
+          <div class="menu-left">
+          </div>
+          <div class="menu-right pull-right">
+            <div>
+              <app-menu></app-menu>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

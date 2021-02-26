@@ -21,7 +21,7 @@ header {
                     display: block;
                     padding-right: 27px;
                     color: #222222;
-                    font-size: 12px !important;
+                    font-size: 15px !important;
                     font-weight: 500;
                     line-height: 23px;
                     text-decoration: none;
@@ -1507,7 +1507,7 @@ header {
         left: 50%;
         margin-right: -50%;
         transform: translateX(-50%);
-        padding-top: 30px !important;
+        padding-top: 97px !important;
         padding-bottom: 30px !important;
     }
     .toggle-nav {
@@ -1586,7 +1586,7 @@ header {
 @media (max-width: 480px) {
     .brand-logo {
         img {
-            height: 115px;
+            height: 137px;
         }
     }
 }
